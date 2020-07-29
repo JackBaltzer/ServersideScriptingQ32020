@@ -1,0 +1,5 @@
+<nav>
+	<a href="/" <%- typeof page != 'undefined' && page == 'home' ? 'class="active"' : '' %>>Home</a>
+	<a href="/test" <%- typeof page != 'undefined' && page == 'test' ? 'class="active"' : '' %>>Test</a>
+	<a href="/book" <%- typeof page != 'undefined' && page == 'book' ? 'class="active"' : '' %>>Book</a>
+</nav>

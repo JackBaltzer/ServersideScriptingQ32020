@@ -1,0 +1,11 @@
+body {
+	background: darkgoldenrod;
+	color: white;
+	font: 15px verdana, arial, sans-serif;
+}
+
+
+
+a.active {
+	background: green;
+}
