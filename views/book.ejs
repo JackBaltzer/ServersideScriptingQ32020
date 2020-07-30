@@ -16,15 +16,18 @@
 	<form method="post">
 		<div>
 			<label>Titel:</label>
-			<input type="text" name="title" value="<%= typeof book != 'undefined' && book != null ? book.title : '' %>">
+			<input type="text" name="title" required
+				value="<%= typeof book != 'undefined' && book != null ? book.title : '' %>">
 		</div>
 		<div>
 			<label>Forfatter:</label>
-			<input type="text" name="author" value="<%= typeof book != 'undefined' && book != null ? book.author : '' %>">
+			<input type="text" name="author" required
+				value="<%= typeof book != 'undefined' && book != null ? book.author : '' %>">
 		</div>
 		<div>
 			<label>Sider:</label>
-			<input type="number" name="pages" value="<%= typeof book != 'undefined'  && book != null? book.pages : '' %>">
+			<input type="number" name="pages" required
+				value="<%= typeof book != 'undefined'  && book != null? book.pages : '' %>">
 		</div>
 		<button>Gem</button><a href="/book">Annuller</a>
 	</form>
@@ -48,7 +51,7 @@
 				<a href="/book/edit/<%= book._id %>">RET</a>
 				<a href="/book/delete/<%= book._id %>" onclick="return confirm('Er du sikker på du vil slette?')">SLET</a>
 			</td>
-			<td><%= book._id %></td>
+			<td class="faded"><%= book._id %></td>
 			<td><%= book.title %></td>
 			<td><%= book.author %></td>
 			<td><%= book.pages %></td>

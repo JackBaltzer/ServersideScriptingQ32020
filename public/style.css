@@ -4,14 +4,53 @@ body {
 	font: 15px verdana, arial, sans-serif;
 }
 
-
-
-a.active {
-	background: green;
+nav a {
+	padding: 5px;
+	display: inline-block;
 }
 
+nav a.active {
+	background: olive;
+	color: #ffffff;
+}
 
-form label{
-	display:inline-block;
-	width:100px;
+form label {
+	display: inline-block;
+	width: 100px;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table a {
+	margin: 2px;
+	display: inline-block;
+	padding: 3px;
+	text-decoration: none;
+	border: solid 1px #000;
+}
+
+input {
+	margin: 2px;
+}
+
+a:hover {
+	background: cornsilk;
+	color: black;
+}
+
+tr:hover {
+	background: indianred;
+}
+
+td.faded {
+	color: gold;
+}
+
+.book {
+	border: solid 1px black;
+	padding: 10px;
+	margin: 20px;
+	width: 200px;
 }
